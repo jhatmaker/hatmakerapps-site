@@ -326,6 +326,39 @@
       font-weight: 900;
     }
 
+    /* BADGE SYSTEM */
+    .app-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .ab {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+
+    /* Cost — green */
+    .ab-cost     { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+    /* Connectivity — blue */
+    .ab-connect  { background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; }
+    /* Privacy — purple */
+    .ab-privacy  { background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+    /* Account — slate */
+    .ab-account  { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+    /* Audience — amber */
+    .ab-audience { background: #fef9c3; color: #a16207; border: 1px solid #fde68a; }
+    /* Gameplay — rose */
+    .ab-play     { background: #ffe4e6; color: #be123c; border: 1px solid #fecdd3; }
+
     .btn-play {
       display: flex;
       align-items: center;
@@ -559,6 +592,7 @@
       <li><a href="#apps">Games</a></li>
       <li><a href="#story">Our Story</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="support.html">Support ❤️</a></li>
       <li><a href="privacy.html">Privacy</a></li>
     </ul>
   </nav>
@@ -609,11 +643,14 @@
           <div class="app-card-icon icon-blue">🔤</div>
           <h3>Hangman</h3>
           <p class="app-card-desc">The classic word-guessing game everyone knows. Guess letters to reveal the hidden word before you run out of chances. Great for building vocabulary and spelling skills.</p>
-          <ul class="app-features">
-            <li>Works completely offline</li>
-            <li>All ages</li>
-            <li>No account needed</li>
-          </ul>
+          <div class="app-badges">
+            <span class="ab ab-cost">💚 Free</span>
+            <span class="ab ab-connect">📶 Offline</span>
+            <span class="ab ab-privacy">🔒 No Data Collected</span>
+            <span class="ab ab-account">👤 No Account</span>
+            <span class="ab ab-audience">👨‍👧‍👦 Family Friendly</span>
+            <span class="ab ab-play">🎮 Single Player</span>
+          </div>
           <a href="#" class="btn-play coming-soon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
             Coming to Google Play
@@ -624,11 +661,17 @@
           <div class="app-card-icon icon-amber">⚓</div>
           <h3>Sink It!</h3>
           <p class="app-card-desc">A classic naval strategy game for 1 or 2 players. Place your fleet, call your shots, and sink the enemy ships before they sink yours. Easy to learn, hard to put down.</p>
-          <ul class="app-features">
-            <li>Solo & 2-player pass-and-play</li>
-            <li>Multiple difficulty levels</li>
-            <li>No account needed</li>
-          </ul>
+          <div class="app-badges">
+            <span class="ab ab-cost">💚 Free</span>
+            <span class="ab ab-connect">📶 Offline</span>
+            <span class="ab ab-privacy">🔒 No Data Collected</span>
+            <span class="ab ab-account">👤 No Account</span>
+            <span class="ab ab-audience">👨‍👧‍👦 Family Friendly</span>
+            <span class="ab ab-play">🎮 Single Player</span>
+            <span class="ab ab-play">👥 Pass & Play</span>
+            <span class="ab ab-play">🔵 Bluetooth</span>
+            <span class="ab ab-play">📡 Wi-Fi Direct</span>
+          </div>
           <a href="#" class="btn-play coming-soon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
             Coming to Google Play
@@ -639,11 +682,14 @@
           <div class="app-card-icon icon-green">🎯</div>
           <h3>Code Breaker</h3>
           <p class="app-card-desc">A deduction game that sharpens logical thinking. Try to crack the hidden color sequence using clues from each guess. Endlessly replayable with configurable difficulty.</p>
-          <ul class="app-features">
-            <li>Adjustable colors & pegs</li>
-            <li>Great for kids & adults</li>
-            <li>No account needed</li>
-          </ul>
+          <div class="app-badges">
+            <span class="ab ab-cost">💚 Free</span>
+            <span class="ab ab-connect">📶 Offline</span>
+            <span class="ab ab-privacy">🔒 No Data Collected</span>
+            <span class="ab ab-account">👤 No Account</span>
+            <span class="ab ab-audience">👨‍👧‍👦 Family Friendly</span>
+            <span class="ab ab-play">🎮 Single Player</span>
+          </div>
           <a href="#" class="btn-play coming-soon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
             Coming to Google Play
@@ -689,6 +735,17 @@
     </div>
   </div>
 
+  <!-- SUPPORT STRIP -->
+  <div style="background: #f5f3ff; border-top: 1px solid #ddd6fe; border-bottom: 1px solid #ddd6fe;">
+    <div style="max-width:1100px; margin:0 auto; padding:2.75rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+      <div>
+        <h3 style="font-size:1.1rem; font-weight:900; margin-bottom:0.35rem;">❤️ Enjoying the games?</h3>
+        <p style="font-size:0.88rem; color:var(--muted); line-height:1.6; max-width:520px;">All our games are free — but if they've brought some fun to your family, a small contribution or a piece of feedback means the world to us.</p>
+      </div>
+      <a href="support.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:#7c3aed; color:white; font-size:0.85rem; font-weight:800; padding:0.8rem 1.6rem; border-radius:10px; text-decoration:none; white-space:nowrap; transition:background 0.2s;" onmouseover="this.style.background='#6d28d9'" onmouseout="this.style.background='#7c3aed'">Support & Feedback →</a>
+    </div>
+  </div>
+
   <!-- PRIVACY STRIP -->
   <div class="privacy-strip">
     <div class="privacy-inner">
@@ -719,8 +776,9 @@
     <ul class="footer-links">
       <li><a href="#apps">Games</a></li>
       <li><a href="#story">About</a></li>
+      <li><a href="support.html">Support ❤️</a></li>
       <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="mailto:support@hatmakerapp.com">Support</a></li>
+      <li><a href="mailto:support@hatmakerapp.com">Contact</a></li>
     </ul>
   </footer>
 
